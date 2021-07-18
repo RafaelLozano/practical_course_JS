@@ -4,21 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Figuras</title>
+    <link rel="stylesheet" href="./figuras.css" />
+    <title>Geometry</title>
 </head>
 <body>
-    <h1>Figuras geometricas</h1>
-    <section>
-        <form action="">
-            <h1>Calcular Area y perimetro del cuadrado</h1>
-            <span>Ingresa el lado del cuadrado</span>
-            <input type="text" name="" id="square side" >
-            <button type="button" onclick="getSquareArea()">Calcular area</button>
-        </form>
-        <div id="result__container" style="display: none;">
-            <span>El resultado es: </span><span id="result"></span>
+    <h1>Geometry</h1>
+        <form class="card__container" onsubmit="getSquareArea()">
+            <div class="card__header">
+                <div class="square"></div>
+                <h2>Square</h2>
+            </div>
+            <p>How long is each side of your square?</p>
+            <div class="input__container">
+                <input class="card__input" type="text" name="" id="square side" >
+                <select class="card__select">
+                    <option value="0">cm</option>
+                    <option value="1">mm</option>
+                </select>
+            </div>
+            <div class="button__container">
+                <button class="card__button" type="button" onclick="getSquareArea()">Get perimeter</button>
+                <button class="card__button" type="button" onclick="getSquareArea()">Get area</button>
+            </div>
+            <div id="result__container" style="display: none;text-align: center;" class="result__container">
+            <span class="result__text">El resultado es: </span><span class="result__text" id="result"></span>
         </div>
-    </section>
+        </form>
+        
+    
     <script src="./figuras.js" ></script>
 </body>
 </html>

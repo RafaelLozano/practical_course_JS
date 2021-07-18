@@ -44,7 +44,7 @@ body{
 }
 .card__select{
     width: 20%;
-    background-color:rgba(85, 227, 179, 0.94) ;
+    background-color:transparent;
     border: 0;
     padding: 12px;
     border-radius: 10px;
@@ -83,4 +83,5 @@ body{
     -moz-box-shadow: 1px 10px 1px -2px rgba(255,255,255,1);
     border-radius: 20px;
     margin: 15px 0;
+    padding: 12px 0;
 }

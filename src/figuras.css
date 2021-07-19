@@ -4,7 +4,7 @@ body{
     align-items: center;  
     width: 90%;
     margin-left: 5%;
-    background-image: url(/assets/images/header-image.jpeg);
+    background-image: url(https://github.com/RafaelLozano/practical_course_JS/blob/main/assets/images/header-image.jpeg?raw=true);
     background-repeat: repeat-x;
 }
 .card__container{

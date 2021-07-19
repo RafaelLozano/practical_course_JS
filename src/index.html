@@ -8,7 +8,9 @@
     <title>Geometry</title>
 </head>
 <body>
-    <h1>Geometry</h1>
+    <header>
+        <h1>Geometry</h1>
+    </header>
         <form class="card__container" onsubmit="getSquareArea()">
             <div class="card__header">
                 <div class="square"></div>
@@ -16,7 +18,7 @@
             </div>
             <p>How long is each side of your square?</p>
             <div class="input__container">
-                <input class="card__input" type="text" name="" id="square side" >
+                <input class="card__input" type="number" name="" id="square side" >
                 <select class="card__select">
                     <option value="0">cm</option>
                 </select>
@@ -26,9 +28,35 @@
                 <button class="card__button" type="button" onclick="getSquareArea()">Get area</button>
             </div>
             <div id="result__container" style="display: none;text-align: center;" class="result__container">
-            <span class="result__text" id="result"></span>
         </div>
         </form>
+        
+        <form class="card__container" onsubmit="getSquareArea()" style="background-color: rgba(98, 0, 255, 0.625);">
+            <div class="card__header">
+                <div class="triangle"></div>
+                <h2>Triangle</h2>
+            </div>
+            <p>What are the measurements of your tringle?</p>
+            <span>Base:</span>
+            <input class="card__input" style="background-color: rgba(133, 58, 254, 0.8); width: 90%;" type="number"id="triangleBase" >
+            <span>Height:</span>
+            <input class="card__input" style="background-color: rgba(133, 58, 254, 0.8); width: 90%;" type="number"id="triangleHeight" >
+            <div style="display: flex; justify-content: center;">
+                <p>Unit: </p>
+                <select class="card__select">
+                        <option value="0">cm</option>
+                </select>
+            </div>
+            <div class="button__container" >
+                <button class="card__button" style="color:rgb(98, 0, 255)" type="button" onclick="getTriangleArea()">Get area</button>
+            </div>
+            <div id="result__container--triangle" style="display: none;text-align: center;" class="result__container">
+        </div>
+        </form>
+
+        <footer>
+            <span>Make with ❤ by Rafael Lozano Rolón</span>
+        </footer>
         
     
     <script src="./figuras.js" ></script>

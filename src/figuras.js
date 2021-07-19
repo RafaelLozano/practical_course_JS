@@ -5,8 +5,7 @@ const getSquareArea = () => {
     const result = document.getElementById("result")
     const resultContainer = document.getElementById("result__container")
 
-    result.innerHTML = '';//clear existing data
-    result.appendChild(document.createTextNode(`Area: ${calcArea(side)}`))//
+    resultContainer.innerHTML= `<span class="result__text">Area: ${calcArea(side)} cm<sup>2</sup></span>`
     resultContainer.style.display = "block"//display the result 
 } 
 const getSquarePerimeter = () => {
@@ -14,7 +13,6 @@ const getSquarePerimeter = () => {
     const result = document.getElementById("result")
     const resultContainer = document.getElementById("result__container")
 
-    result.innerHTML = '';//clear existing data
-    result.appendChild(document.createTextNode(`Perimeter: ${calcPerimeter(side)}`))//
+    resultContainer.innerHTML= `<span class="result__text">Perimeter: ${calcPerimeter(side)} cm</span>`
     resultContainer.style.display = "block"//display the result 
 } 
